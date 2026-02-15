@@ -19,12 +19,6 @@ from __future__ import print_function
 
 from setuptools import setup, find_packages
 
-import unittest
-
-def all_tests():
-    test_loader = unittest.TestLoader()
-    test_suite = test_loader.discover('.', pattern='*_test.py')
-    return test_suite
 
 setup(
     name="google-pasta",
@@ -38,7 +32,6 @@ setup(
     license="Apache 2.0",
     keywords="python refactoring ast",
     url="https://github.com/google/pasta",
-    test_suite='setup.all_tests',
     classifiers=[
         "Development Status :: 2 - Pre-Alpha",
         "License :: OSI Approved :: Apache Software License",

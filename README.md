@@ -78,16 +78,16 @@ rename.rename_external(tree, 'pkg.module.Query', 'pkg.module.ExecuteQuery')
 
 ## Developing
 
-This project uses
-[`setuptools`](https://setuptools.readthedocs.io/en/latest/setuptools.html) to
-facilitate testing and packaging.
+This project uses [`tox`](https://tox.wiki/) to facilitate testing and
+[`setuptools`](https://setuptools.readthedocs.io/en/latest/setuptools.html) for
+packaging.
 
-```python
-# Run all tests
-python setup.py test
+```bash
+# Run tests in all configured environments
+tox
 
-# Run a single test suite
-python setup.py test -s pasta.base.annotate_test.suite
+# Run tests for one environment
+tox -e py39
 ```
 
 ## Disclaimer
